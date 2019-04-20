@@ -9,4 +9,17 @@
 
 function palindrome(str) {}
 
+// if (str.split("").reverse().join("") === str ) return true;
+// else return false;
+
+// OR
+
+// const reversed = str.split("").reverse().join("");
+//   return str === reversed;
+
+// OR array.every METHOD
+// return str.split("").every((char, i) => {
+// 	return char === str[str.length - i - 1];
+// });
+
 module.exports = palindrome;

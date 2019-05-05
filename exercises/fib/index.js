@@ -20,7 +20,7 @@ function memoize(fn) {
     return result;
   };
 }
-function slowFib(n) {
+function fib(n) {
   if (n < 2) {
     return n;
   }
@@ -28,7 +28,7 @@ function slowFib(n) {
   return fib(n - 1) + fib(n - 2);
 }
 
-const fib = memoize(slowFib);
+fib = memoize(fib);
 
 module.exports = fib;
 

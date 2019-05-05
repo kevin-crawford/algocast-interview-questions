@@ -8,6 +8,19 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
+class Queue {
+  constructor() {
+    this.data = [];
+  }
+
+  // will be called when we need to add a piece of data and store it by inserting into our data array
+  add(record) {
+    this.data.unshift(record);
+  }
+
+  remove() {
+    return this.data.pop();
+  }
+}
 
 module.exports = Queue;
